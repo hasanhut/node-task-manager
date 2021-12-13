@@ -6,7 +6,7 @@ require("dotenv").config();
 //db connection
 const connectDB = require("./db/connect");
 //middleware
-app.use(express.json());
+app.use(express.static("./public"));
 
 //routes
 app.get("/hello", (req, res) => {
